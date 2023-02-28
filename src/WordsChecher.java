@@ -8,12 +8,11 @@ public class WordsChecher {
     public WordsChecher(String text) {
         String[] word = text.split("\\P{IsAlphabetic}+");
         set = new HashSet<>();
-        for (String words : word
-        ) {
+        for (String words : word) {
             set.add(words);
         }
-        {
-        }
+
+
     }
 
     public boolean hasWord(String word) {
